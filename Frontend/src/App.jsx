@@ -1,7 +1,12 @@
 import React from "react";
-
+import { Hero, Navbar } from "./components/Comp_index";
 function App() {
-  return <div className="bg-amber-500 text-white">App</div>;
+  return (
+    <>
+      <Navbar />
+      <Hero />
+    </>
+  );
 }
 
 export default App;
