@@ -4,7 +4,7 @@ import Button from "./Button";
 
 function Navbar() {
   return (
-    <div className="navbar px-30  flex justify-between bg-base-100 shadow-sm">
+    <div className="navbar px-30 max-sm:px-6 flex justify-between bg-base-100 shadow-sm">
       <div className="flex-none">
         <button className="btn btn-square btn-ghost">
           <img src={assets.logo} alt="" className="rounded-full" />

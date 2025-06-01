@@ -1,5 +1,7 @@
 import React from "react";
-import Button from "./Button";
+import { Button, Input } from "./Comp_index";
+import { assets } from "../assets/assets";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -14,12 +16,35 @@ function Hero() {
             Your own <span className="text-primary opacity-80">blogging</span>{" "}
             <br /> plateform
           </h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+
+          <p className="py-4">
+            Share your voice with the world using our intelligent,
+            creator-friendly blogging platform. Empower your stories with
+            AI-driven tools designed to inspire and engage.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <div className="flex justify-between w-full border-1 border-gray-300 rounded-md">
+            <Input
+              type="text"
+              placeholder="Search for a blog"
+              className="w-full px-4 outline-0"
+            />
+            <Button
+              className="w-[20%] btn btn-primary text-white px-4 py-2"
+              text="Search"
+            />
+          </div>
+          <div className="flex justify-center items-center space-x-4 my-6">
+            {assets.routes.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                aria-current={item.current ? "page" : undefined}
+                className=""
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>
