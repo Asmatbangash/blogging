@@ -6,3 +6,8 @@
 *{
   font-family: "Outfit", sans-serif;
 }
+#root{
+  background-image: url('./assets/bg.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

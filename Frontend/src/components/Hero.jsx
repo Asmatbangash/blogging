@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <div className="hero min-h-screen">
+    <div className="hero mt-12">
       <div className="hero-content text-center">
         <div className="max-w-md">
           <Button
@@ -22,17 +22,18 @@ function Hero() {
             creator-friendly blogging platform. Empower your stories with
             AI-driven tools designed to inspire and engage.
           </p>
-          <div className="flex justify-between w-full border-1 border-gray-300 rounded-md">
+          <form className="flex justify-between w-full border-1 border-gray-300 rounded-md">
             <Input
               type="text"
               placeholder="Search for a blog"
               className="w-full px-4 outline-0"
+              required={true}
             />
             <Button
               className="w-[20%] btn btn-primary text-white px-4 py-2"
               text="Search"
             />
-          </div>
+          </form>
           <div className="flex justify-center items-center space-x-4 my-6">
             {assets.routes.map((item) => (
               <Link
