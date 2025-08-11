@@ -9,6 +9,7 @@ import {
   LifeStyle,
   Startup,
   Technology,
+  Blog,
 } from "./pages/Pages_index.js";
 
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/finance",
         element: <Finance />,
+      },
+      {
+        path: "/blog/:id",
+        element: <Blog />,
       },
     ],
   },

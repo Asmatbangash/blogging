@@ -22,11 +22,11 @@ function Hero() {
             creator-friendly blogging platform. Empower your stories with
             AI-driven tools designed to inspire and engage.
           </p>
-          <form className="flex justify-between w-full border-1 border-gray-300 rounded-md px-2">
+          <form className="flex justify-between w-full border-1 border-gray-300 rounded-md">
             <Input
               type="text"
               placeholder="Search for a blog"
-              className="w-full px-4 outline-0"
+              className="w-full px-2 outline-0"
               required={true}
             />
             <Button

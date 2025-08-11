@@ -11,7 +11,8 @@ const routes = [
 
 const blogPosts = [
   {
-    id: 1,
+    _id: 1,
+    autherName: "John Smith",
     title: "The Future of AI: What to Expect in 2030",
     category: "Technology",
     desc: "Artificial Intelligence is evolving rapidly. Here's what experts predict for the next decade.",
@@ -19,7 +20,8 @@ const blogPosts = [
     img: blogImg,
   },
   {
-    id: 2,
+    _id: 2,
+    autherName: "Sophia Johnson",
     title: "How to Launch a Successful Startup in 2025",
     category: "Startup",
     desc: "Startups in 2025 face new challenges and opportunities. Learn key strategies for success.",
@@ -27,7 +29,8 @@ const blogPosts = [
     img: blogImg,
   },
   {
-    id: 3,
+    _id: 3,
+    autherName: "Emily Davis",
     title: "Top 10 Lifestyle Changes for a Healthier You",
     category: "Lifestyle",
     desc: "Small changes can lead to big results. Try these daily habits for a better lifestyle.",
@@ -35,7 +38,8 @@ const blogPosts = [
     img: blogImg,
   },
   {
-    id: 4,
+    _id: 4,
+    autherName: "Michael Lee",
     title: "Cryptocurrency Trends to Watch in 2025",
     category: "Finance",
     desc: "From regulation to innovation, here’s what’s happening in the world of digital finance.",
@@ -43,7 +47,8 @@ const blogPosts = [
     img: blogImg,
   },
   {
-    id: 5,
+    _id: 5,
+    autherName: "Olivia Brown",
     title: "Remote Work: Tools Every Team Needs",
     category: "Technology",
     desc: "Remote work is here to stay. These tools help keep your team productive and connected.",
@@ -51,7 +56,8 @@ const blogPosts = [
     img: blogImg,
   },
   {
-    id: 6,
+    _id: 6,
+    autherName: "David Wilson",
     title: "Bootstrapping Your Business: A Guide",
     category: "Startup",
     desc: "No VC? No problem. Here’s how to build a company from scratch with limited funds.",
@@ -59,7 +65,8 @@ const blogPosts = [
     img: blogImg,
   },
   {
-    id: 7,
+    _id: 7,
+    autherName: "Emma Martinez",
     title: "Saving vs Investing: What Should You Focus On?",
     category: "Finance",
     desc: "Understanding the difference can make or break your financial future.",
@@ -67,7 +74,8 @@ const blogPosts = [
     img: blogImg,
   },
   {
-    id: 8,
+    _id: 8,
+    autherName: "Liam Anderson",
     title: "Morning Routines of Highly Successful People",
     category: "Lifestyle",
     desc: "Success starts in the morning. See what habits successful people swear by.",
