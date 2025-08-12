@@ -17,7 +17,6 @@ function Blog() {
     fetchBlogData();
   }, []);
 
-  console.log(data);
   return data ? (
     <div className="flex flex-col justify-center items-center my-5 max-sm:px-5">
       <div className="text-center max-w-md my-10">
@@ -42,7 +41,7 @@ function Blog() {
       </div>
     </div>
   ) : (
-    <div>Loading....</div>
+    <span className="loading loading-spinner text-secondary"></span>
   );
 }
 

@@ -1,4 +1,4 @@
-import { BlogCard, Hero } from "../components/Comp_index";
+import { BlogCard, Hero, Subscribe } from "../components/Comp_index";
 import { assets } from "../assets/assets";
 
 function All() {
@@ -11,6 +11,8 @@ function All() {
           <BlogCard blog={blog} />
         ))}
       </div>
+
+      <Subscribe />
     </>
   );
 }

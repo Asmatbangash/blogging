@@ -1,6 +1,6 @@
 import React from "react";
 import { assets } from "../assets/assets";
-import { BlogCard, Hero } from "../components/Comp_index";
+import { BlogCard, Hero, Subscribe } from "../components/Comp_index";
 
 function Finance() {
   const financeCategoryBlog = assets.blogPosts.filter(
@@ -15,6 +15,7 @@ function Finance() {
           <BlogCard blog={blog} />
         ))}
       </div>
+      <Subscribe />
     </>
   );
 }
