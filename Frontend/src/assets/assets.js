@@ -1,5 +1,5 @@
 import logo from "./logo.png";
-import blogImg from "./blog.jpeg";
+import blogImg from "./blog.webp";
 
 const routes = [
   { name: "All", href: "/" },

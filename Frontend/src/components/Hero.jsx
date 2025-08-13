@@ -10,10 +10,10 @@ function Hero() {
         <div className="max-w-md">
           <Button
             text="New AI feture integrated"
-            className="py-2 px-4 mb-5 rounded-full bg-[#3c7b703b]"
+            className="py-2 px-4 mb-5 rounded-full bg-[#CFDBA3]"
           />
           <h1 className="text-5xl max-sm:text-3xl font-bold opacity-80">
-            Your own <span className="text-primary opacity-80">blogging</span>{" "}
+            Your own <span className="text-[#64b9d8] opacity-80">blogging</span>{" "}
             <br /> plateform
           </h1>
 
@@ -30,7 +30,7 @@ function Hero() {
               required={true}
             />
             <Button
-              className="w-[20%] btn btn-primary text-white px-4 py-2"
+              className="w-[20%] btn btn-info text-white px-4 py-2"
               text="Search"
             />
           </form>

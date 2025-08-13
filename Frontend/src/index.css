@@ -13,8 +13,7 @@
 }
 
 .active{
-  background-color: #3B25C1;
-  color: white;
+  background-color: #CFDBA3;
   border-radius: 4px;
   transition: all 1s ease;
 }

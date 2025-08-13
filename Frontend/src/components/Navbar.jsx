@@ -3,9 +3,9 @@ import { assets } from "../assets/assets";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ className = "" }) {
   return (
-    <div className="navbar px-30 max-sm:px-6 flex justify-between">
+    <div className={`${className}`}>
       <Link to="/" className="flex items-center">
         <img
           src={assets.logo}
@@ -15,7 +15,10 @@ function Navbar() {
       </Link>
 
       <div className="flex-none">
-        <Button text="Login" className="btn btn-primary text-white" />
+        <Link to="/login">
+          {" "}
+          <Button text="Login" className="btn btn-info text-white" />
+        </Link>
       </div>
     </div>
   );

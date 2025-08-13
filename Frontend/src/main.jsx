@@ -11,6 +11,7 @@ import {
   Technology,
   Blog,
 } from "./pages/Pages_index.js";
+import { Login } from "./components/Comp_index.js";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
         element: <Blog />,
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);
 
