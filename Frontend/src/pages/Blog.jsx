@@ -20,7 +20,7 @@ function Blog() {
   return data ? (
     <div className="flex flex-col justify-center items-center my-5 max-sm:px-5">
       <div className="text-center max-w-md my-10">
-        <p>Published on {data.date}</p>
+        <p className="pb-5">Published on {data.date}</p>
         <h1 className="text-3xl max-sm:text-3xl font-bold opacity-80">
           {data.title}
         </h1>

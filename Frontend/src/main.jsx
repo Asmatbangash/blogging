@@ -10,6 +10,11 @@ import {
   Startup,
   Technology,
   Blog,
+  Layout,
+  DashbaordOverview,
+  AddBlog,
+  Comments,
+  BlogList,
 } from "./pages/Pages_index.js";
 import { Login } from "./components/Comp_index.js";
 
@@ -18,36 +23,25 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      {
-        path: "/",
-        element: <All />,
-      },
-      {
-        path: "/technology",
-        element: <Technology />,
-      },
-      {
-        path: "/lifeStyle",
-        element: <LifeStyle />,
-      },
-      {
-        path: "/start-up",
-        element: <Startup />,
-      },
-      {
-        path: "/finance",
-        element: <Finance />,
-      },
-      {
-        path: "/blog/:id",
-        element: <Blog />,
-      },
+      { index: true, element: <All /> },
+      { path: "technology", element: <Technology /> },
+      { path: "lifestyle", element: <LifeStyle /> },
+      { path: "start-up", element: <Startup /> },
+      { path: "finance", element: <Finance /> },
+      { path: "blog/:id", element: <Blog /> },
     ],
   },
   {
-    path: "/login",
-    element: <Login />,
+    path: "admin",
+    element: <Layout />,
+    children: [
+      { path: "dashbaord", element: <DashbaordOverview /> },
+      { path: "add-blog", element: <AddBlog /> },
+      { path: "Comments", element: <Comments /> },
+      { path: "blog-list", element: <BlogList /> },
+    ],
   },
+  { path: "/login", element: <Login /> },
 ]);
 
 createRoot(document.getElementById("root")).render(

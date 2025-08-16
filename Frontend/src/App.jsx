@@ -5,7 +5,10 @@ import { Outlet } from "react-router-dom";
 function App() {
   return (
     <>
-      <Navbar className="navbar px-30 max-sm:px-6 flex justify-between" />
+      <Navbar
+        className="navbar px-30 max-sm:px-6 flex justify-between"
+        href={"/"}
+      />
       <Outlet />
       <Footer />
     </>

@@ -4,14 +4,17 @@ import { Link } from "react-router-dom";
 function BlogCard({ blog }) {
   return (
     <Link to={`/blog/${blog._id}`}>
-      <div className="card bg-base-100 w-80 h-92 shadow-sm" key={blog.id}>
+      <div
+        className="card bg-base-100 w-70 h-80 max-sm:w-full shadow-sm hover:scale-104"
+        key={blog.id}
+      >
         <figure>
-          <img src={blog.img} alt="blog" />
+          <img src={blog.img} alt="blog" className="w-full h-full" />
         </figure>
         <div className="card-body">
-          <div className="badge badge-primary">{blog.category}</div>
+          <div className="badge badge-info text-white">{blog.category}</div>
           <h2 className="card-title">{blog.title}</h2>
-          <p dangerouslySetInnerHTML={{ __html: blog.desc }} />
+          <p dangerouslySetInnerHTML={{ __html: blog.desc.slice(0, 100) }} />
         </div>
       </div>
     </Link>

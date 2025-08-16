@@ -1,14 +1,17 @@
 import React from "react";
 import { Navbar, Sidebar } from "../../components/Comp_index";
-import DashbaordOverview from "./DashbaordOverview";
+import { Outlet } from "react-router-dom";
 
 function Layout() {
   return (
     <div>
-      <Navbar className="navbar bg-white flex justify-between px-6" />
+      <Navbar
+        className="navbar bg-white flex justify-between px-6"
+        href={"/"}
+      />
       <div className="flex">
         <Sidebar />
-        <DashbaordOverview />
+        <Outlet />
       </div>
     </div>
   );

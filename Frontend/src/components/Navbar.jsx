@@ -3,10 +3,10 @@ import { assets } from "../assets/assets";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 
-function Navbar({ className = "" }) {
+function Navbar({ className = "", href }) {
   return (
     <div className={`${className}`}>
-      <Link to="/" className="flex items-center">
+      <Link to={href} className="flex items-center">
         <img
           src={assets.logo}
           alt=""

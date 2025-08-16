@@ -4,7 +4,7 @@ import { BiAddToQueue } from "react-icons/bi";
 import { CiViewList } from "react-icons/ci";
 import { FaRegCommentDots } from "react-icons/fa";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +13,12 @@ function Sidebar() {
   const sideNavigation = [
     {
       name: "Dashboard",
-      href: "/dashboard",
+      href: "dashbaord",
       Icon: MdOutlineDashboardCustomize,
     },
-    { name: "Add Blog", href: "/add-blog", Icon: BiAddToQueue },
-    { name: "Blog List", href: "/blog-list", Icon: CiViewList },
-    { name: "Comments", href: "/comments", Icon: FaRegCommentDots },
+    { name: "Add Blog", href: "add-blog", Icon: BiAddToQueue },
+    { name: "Blog List", href: "blog-list", Icon: CiViewList },
+    { name: "Comments", href: "comments", Icon: FaRegCommentDots },
   ];
 
   return (
@@ -37,10 +37,12 @@ function Sidebar() {
             const isActive = location.pathname === item.href;
             return (
               <li key={index}>
-                <Link
+                <NavLink
                   to={item.href}
                   onClick={() => setIsOpen(false)} // close on mobile click
-                  className={`flex items-center gap-4 p-3 rounded-lg transition-all duration-300 
+                  className={({
+                    isActive,
+                  }) => `flex items-center gap-4 p-3 rounded-lg transition-all duration-300 
                     ${
                       isActive
                         ? "bg-purple-100 text-purple-700 font-semibold shadow-inner"
@@ -49,7 +51,7 @@ function Sidebar() {
                 >
                   <item.Icon className="text-xl" />
                   <span className="truncate">{item.name}</span>
-                </Link>
+                </NavLink>
               </li>
             );
           })}

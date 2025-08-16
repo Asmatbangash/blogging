@@ -13,8 +13,9 @@ function Hero() {
             className="py-2 px-4 mb-5 rounded-full bg-[#CFDBA3]"
           />
           <h1 className="text-5xl max-sm:text-3xl font-bold opacity-80">
-            Your own <span className="text-[#64b9d8] opacity-80">blogging</span>{" "}
-            <br /> plateform
+            Your own{" "}
+            <span className="text-purple-600 opacity-80">blogging</span> <br />{" "}
+            plateform
           </h1>
 
           <p className="py-4">
