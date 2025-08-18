@@ -14,7 +14,7 @@ function DashbaordOverview() {
   return (
     <div className="flex  flex-wrap m-4">
       {boxes.map((box) => (
-        <div class="flex items-center p-3 w-72 h-28 bg-white rounded-md shadow-lg m-2">
+        <div class="flex items-center p-3 w-60 h-20 bg-white rounded-md shadow-lg m-2">
           <section class="flex justify-center items-center w-14 h-14 rounded-full shadow-md bg-gradient-to-r from-[#F9C97C] to-[#A2E9C1] hover:from-[#C9A9E9] hover:to-[#7EE7FC] hover:cursor-pointer hover:scale-110 duration-300">
             {box.icon}
           </section>
@@ -33,7 +33,7 @@ function DashbaordOverview() {
       <div className="my-10">
         <div className="flex  items-center">
           <MdLineWeight />
-          <h1 className="text-2xl mx-2">Latest Blog</h1>
+          <h1 className="text-xl mx-2">Latest Blog</h1>
         </div>
         <LatestBlog />
       </div>

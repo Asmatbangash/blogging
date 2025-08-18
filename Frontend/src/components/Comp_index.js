@@ -8,6 +8,7 @@ import Subscribe from "./Subscribe";
 import Login from "./admin/Login";
 import Sidebar from "./admin/Sidebar";
 import LatestBlog from "./admin/LatestBlog";
+import ListOfBlogs from "./admin/ListOfBlogs";
 
 export {
   Navbar,
@@ -20,4 +21,5 @@ export {
   Login,
   Sidebar,
   LatestBlog,
+  ListOfBlogs,
 };
