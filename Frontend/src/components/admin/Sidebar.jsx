@@ -29,7 +29,7 @@ function Sidebar() {
         </button>
       </div>
       <div
-        className={`fixed md:static top-0 left-0 z-50 w-64 min-h-screen bg-white p-4 flex flex-col  border-gray-200 transform transition-transform duration-300
+        className={`fixed md:static top-0 left-0 z-50 max-w-72 min-h-screen bg-white p-4 flex flex-col  border-gray-200 transform transition-transform duration-300
         ${isOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}
       >
         <ul className="flex flex-col gap-2 mt-4">

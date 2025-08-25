@@ -9,6 +9,7 @@ import Login from "./admin/Login";
 import Sidebar from "./admin/Sidebar";
 import LatestBlog from "./admin/LatestBlog";
 import ListOfBlogs from "./admin/ListOfBlogs";
+import AddBlogForm from "./admin/AddBlogForm";
 
 export {
   Navbar,
@@ -22,4 +23,5 @@ export {
   Sidebar,
   LatestBlog,
   ListOfBlogs,
+  AddBlogForm,
 };

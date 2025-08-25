@@ -3,7 +3,7 @@ import { assets } from "../../assets/assets";
 
 function Comments() {
   return (
-    <div className="overflow-x-auto w-full p-15">
+    <div className="overflow-x-auto bg-white m-10 w-full p-8">
       <div className="flex justify-between items-center">
         <div>
           <h2 className="text-xl">Comments</h2>

@@ -1,5 +1,6 @@
 import logo from "./logo.png";
 import blogImg from "./blog.webp";
+import upload_area from "./upload_area.webp";
 
 const routes = [
   { name: "All", href: "/" },
@@ -88,4 +89,5 @@ export const assets = {
   logo,
   routes,
   blogPosts,
+  upload_area,
 };
