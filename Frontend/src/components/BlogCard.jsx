@@ -5,7 +5,7 @@ function BlogCard({ blog }) {
   return (
     <Link to={`/blog/${blog._id}`}>
       <div
-        className="card bg-base-100 w-70 h-80 max-sm:w-full shadow-sm hover:scale-104"
+        className="card m-2 bg-base-100 w-70 h-80 max-sm:w-full shadow-sm hover:scale-104"
         key={blog.id}
       >
         <figure>

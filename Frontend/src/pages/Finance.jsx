@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { assets } from "../assets/assets";
 import { BlogCard, Hero, Subscribe } from "../components/Comp_index";
 import { contextData } from "../Context/Context";
 
@@ -7,9 +6,9 @@ function Finance() {
   const { filteredData } = useContext(contextData);
 
   // Prefer context data if searching, otherwise fall back to all Finance blogs
-  const financeCategoryBlog = (
-    filteredData.length > 0 ? filteredData : assets.blogPosts
-  ).filter((blog) => blog.category === "Finance");
+  const financeCategoryBlog = filteredData.filter(
+    (blog) => blog.category === "Finance"
+  );
 
   return (
     <>
@@ -17,7 +16,7 @@ function Finance() {
 
       <div className="px-6 sm:px-10 lg:px-20 py-10">
         {financeCategoryBlog.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex justify-center items-center flex-wrap">
             {financeCategoryBlog.map((blog, index) => (
               <BlogCard key={index} blog={blog} />
             ))}
