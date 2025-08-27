@@ -1,6 +1,7 @@
 import React from "react";
 import { Footer, Navbar } from "./components/Comp_index";
 import { Outlet } from "react-router-dom";
+import "react-quill-new/dist/quill.snow.css";
 
 function App() {
   return (

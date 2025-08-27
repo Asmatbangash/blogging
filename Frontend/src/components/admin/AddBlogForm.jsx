@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { assets } from "../../assets/assets.js";
+import ReactQuill from "react-quill-new";
 
 function AddBlogForm() {
   const [image, setImage] = useState();
@@ -75,13 +76,7 @@ function AddBlogForm() {
         >
           Blog Content
         </label>
-        <textarea
-          id="content"
-          name="content"
-          rows={6}
-          placeholder="Write your blog here..."
-          className="mt-2 block w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-600 sm:text-sm"
-        />
+        <ReactQuill className="h" id="content" />
       </div>
 
       {/* Category */}
