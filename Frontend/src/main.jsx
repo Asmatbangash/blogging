@@ -9,7 +9,7 @@ import {
   LifeStyle,
   Startup,
   Technology,
-  Blog,
+  BlogInDetail,
   Layout,
   DashbaordOverview,
   AddBlog,
@@ -17,6 +17,7 @@ import {
   BlogList,
 } from "./pages/Pages_index.js";
 import { Login } from "./components/Comp_index.js";
+import ContextDataProvider from "./Context/Context.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       { path: "lifestyle", element: <LifeStyle /> },
       { path: "start-up", element: <Startup /> },
       { path: "finance", element: <Finance /> },
-      { path: "blog/:id", element: <Blog /> },
+      { path: "blog/:id", element: <BlogInDetail /> },
     ],
   },
   {
@@ -47,6 +48,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <ContextDataProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </ContextDataProvider>
   </StrictMode>
 );

@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import { Button, Input } from "./Comp_index";
 import { assets } from "../assets/assets";
 import { NavLink } from "react-router-dom";
+import { contextData } from "../Context/Context";
 
 function Hero() {
+  const { setQuerry } = useContext(contextData);
   return (
     <div className="flex justify-center items-center mt-12">
       <div className="text-center">
@@ -29,9 +31,10 @@ function Hero() {
               placeholder="Search for a blog"
               className="w-full px-2 outline-0"
               required={true}
+              onChange={(e) => setQuerry(e.target.value.toLowerCase())}
             />
             <Button
-              className="w-[20%] btn btn-info text-white px-4 py-2"
+              className="w-[20%] btn btn-primary text-white px-4 py-2"
               text="Search"
             />
           </form>

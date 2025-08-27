@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { assets } from "../assets/assets";
 import { useParams } from "react-router-dom";
 
-function Blog() {
+function BlogInDetail() {
   const { id } = useParams();
   const [data, setData] = useState(null);
   const [comments, setComments] = useState([]);
@@ -45,4 +45,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default BlogInDetail;

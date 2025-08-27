@@ -8,7 +8,7 @@ function AddBlogForm() {
   const [category, setCategory] = useState();
   const [isPublished, setIsPublished] = useState();
   return (
-    <form className="w-full mx-20 my-10 p-6 bg-white shadow rounded-lg">
+    <form className="w-full mx-20 max-sm:mx-2 my-10 max-sm:my-2 p-6 bg-white shadow rounded-lg max-h-96 overflow-y-auto">
       <h2 className="text-xl font-semibold text-gray-900 mb-6">Add New Blog</h2>
       {/* Cover Image */}
       <div className="mb-5">
@@ -128,7 +128,7 @@ function AddBlogForm() {
           type="submit"
           className="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600"
         >
-          Save Blog
+          add Blog
         </button>
       </div>
     </form>

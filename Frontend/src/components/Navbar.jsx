@@ -17,7 +17,7 @@ function Navbar({ className = "", href }) {
       <div className="flex-none">
         <Link to="/login">
           {" "}
-          <Button text="Login" className="btn btn-info text-white" />
+          <Button text="Login" className="btn btn-primary text-white" />
         </Link>
       </div>
     </div>

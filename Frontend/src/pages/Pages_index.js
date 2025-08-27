@@ -3,7 +3,7 @@ import Technology from "./Technology";
 import LifeStyle from "./LifeStyle";
 import Startup from "./Startup";
 import Finance from "./Finance";
-import Blog from "./Blog";
+import BlogInDetail from "./BlogInDetail";
 import Layout from "./admin/Layout";
 import DashbaordOverview from "./admin/DashbaordOverview";
 import AddBlog from "./admin/AddBlog";
@@ -15,7 +15,7 @@ export {
   LifeStyle,
   Startup,
   Finance,
-  Blog,
+  BlogInDetail,
   Layout,
   DashbaordOverview,
   AddBlog,
